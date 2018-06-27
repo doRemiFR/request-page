@@ -1,0 +1,46 @@
+<!-- Project: Request list -->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<title> Flight Rising Commissions </title>
+<head>
+  <script>
+    function specialOffer() {
+      var x = document.getElementById("speOffInfo");
+      if(x.style.display === "none"){
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+<body>
+
+<!-- This is the visible part of the document -->
+<h1> FR Commissions </h1>
+<p> This is a guide on how to use the following request page. </p>
+<!--  -->
+<ol start="1">
+  <li> Input your Username </li>
+  <li> Include any references. Any requests without references will result in an additional design fee </li>
+  <li> (Optional) Include any information about your character. </li>
+  <li> Select your method of Payment </li>
+</ol>
+
+<p> Commissions are drawn on a canvas of 500 x 500 pixels. </p>
+<p> Prices are per character, not per image. </p>
+<p> Prices may vary every holiday </p>
+
+<form>
+  * Username : <input type="text" username = "uname"> <br>
+  Information : <textarea rows="5" cols="50"> </textarea>
+  Price type : <select name = "">
+    <option value= "simple"> Simple </option>
+    <option value= "detailed"> Detailed </option>
+    <option value= "special" onclcik="specialOffer()"> Special Offer </option>
+      <textarea rows="5" cols="50" id="sepOffInfo"> </textarea>
+  </select>
+</form>
+
+</body>
+</html>
